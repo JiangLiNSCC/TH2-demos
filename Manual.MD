@@ -405,28 +405,6 @@ jobid可通过yhq获得。对于排队作业，取消作业将简单地把作业
 ### “ls”等访问文件夹操作很慢。
 
  出现“ls”等访问文件夹操作慢的原因主要有3个：一是网络慢，网络时延大；二是有大量的IO操作正在进行，造成IO阻塞；三是该文件夹下的文件过多（有成千上万个文件）。若是原因一和二，通常等一段时间后即可恢复正常；若是原因三，则需用户将自己文件夹下的文件分开存放。
-###  重新生成Private Key
- Private Key可以重新生成，用户在登录天河二号系统后，按照如下步骤操作
-
-第一步：
-
-`
-$ cd ~/.ssh
-$ tar cvf bak.tar *
-`
-第二步：
-`
-$ ssh-keygen -t rsa（一直输入回车；若出现“Overwrite (y/n)?”，请输入“y”。）
-$ cd ~/.ssh
-$ cp id_rsa.pub authorized_keys
-$ chmod 400 authorized_keys
-$ cd  .. 
-$ chmod 700 -R .ssh
-`
-第三步：
-
-将id_rsa（Private Key linux系统版）的内容复制到本地的文本文件中，新建一个终端用此新文件用作Private Key文件登录。若登录成功则新的Private Key生成成功。若不成功，重复第二、三步操作。若多次操作不成功，请解压第一步中生成的压缩包（$ tar –xvf bak.tar），并使用旧Private Key登录。
-
 
 ###	提交作业报“Invalid partition name specified”。
  报该错时，建议用户先用“yhi”查看是否可以看见自己所在的分区。若无法看见分区，则是您的机时已到限制.。
@@ -448,3 +426,21 @@ $ chmod 700 -R .ssh
  CG状态是作业退出时，部分结点上的进程没有完全停止导致，并不影响作业的正常退出。
 ###	作业完成退出时显示部分进程被killed，然后退出。
  这种情况下，用户首先应检查所需的输出是否已正常输出完成。导致这种情况出现的原因是有部分进程先完成了计算而提前结束，而当一个作业的部分进程结束，系统默认为作业已完成，在一定时间内其他进程若不结束，则会被强制结束。
+###  重新生成Private Key
+Private Key可以重新生成，用户在登录天河二号系统后，按照如下步骤操作
+第一步：
+`
+$ cd ~/.ssh
+$ tar cvf bak.tar *
+`
+第二步：
+`
+$ ssh-keygen -t rsa（一直输入回车；若出现“Overwrite (y/n)?”，请输入“y”。）
+$ cd ~/.ssh
+$ cp id_rsa.pub authorized_keys
+$ chmod 400 authorized_keys
+$ cd  .. 
+$ chmod 700 -R .ssh
+`
+第三步：
+将id_rsa（Private Key linux系统版）的内容复制到本地的文本文件中，新建一个终端用此新文件用作Private Key文件登录。若登录成功则新的Private Key生成成功。若不成功，重复第二、三步操作。若多次操作不成功，请解压第一步中生成的压缩包（$ tar –xvf bak.tar），并使用旧Private Key登录。
