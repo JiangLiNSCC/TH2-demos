@@ -24,23 +24,23 @@
 1.2.1  Xshell（Xmanager-XShell）登录	 <br>
 1.2.2  PUTTY登录	  <br>
 1.2.3  Linux或苹果系统登录	 <br>
-2. [文件传输](#2--文件传输)	
+2. [文件传输](#2--文件传输)	<br>
 2.1  文件系统	 <br>
 2.1.1  /HOME分区	<br>
 2.1.2  /WORK分区	<br>
 2.2  数据传输	<br>
 2.2.1  FileZilla登录	<br>
 2.2.2  WinSCP登录	<br>
-3.  [环境变量管理工具module](#3--环境变量管理工具module)	
+3.  [环境变量管理工具module](#3--环境变量管理工具module)	<br>
 3.1  简介	<br>
 3.2  基本命令	<br>
-4.  [编译器](#4--编译器)	
+4.  [编译器](#4--编译器)	<br>
 4.1  Intel编译器	 <br>
 4.2  GCC编译器	  <br>
 4.3  MPI编译环境	  <br>
 4.4  MIC编译环境	  <br>
-5.  [作业提交](#5--作业提交)
-5.1  结点状态查看yhinfo或yhi	
+5.  [作业提交](#5--作业提交) <br>
+5.1  结点状态查看yhinfo或yhi	<br>
 5.2  作业状态信息查看yhqueue或yhq	 <br>
 5.3  交互式作业提交yhrun	<br>
 5.3.1  简介	 <br>
