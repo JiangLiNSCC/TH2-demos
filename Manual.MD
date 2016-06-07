@@ -74,22 +74,36 @@ Step 2：使用终端工具连接，通过使用系统管理员提供的Private 
 ### 1.2.1  Xshell（Xmanager-XShell）登录
 
 打开XShell，点击工具栏的“新建”选项。在“连接”的“常规”里，“协议”选择SSH，然后在“主机”处填写系统IP。
+
+![1.JPG](http://o8e06sulr.bkt.clouddn.com/1.JPG)
  
 在“用户身份验证”这里，“方法”选择Public Key，然后点击“浏览”选择得到的Private Key文件，然后点击“确定”即可登录。
+
+![2.JPG](http://o8e06sulr.bkt.clouddn.com/2.JPG)
  
 ###1.2.2  PUTTY登录
 
 用PUTTY登录首先需要转换Private Key文件。打开PUTTY的安装路径，运行PUTTYGEN.EXE程序进行Private Key文件转换。
+
+![3.JPG](http://o8e06sulr.bkt.clouddn.com/3.JPG)
  
 点击“Load”载入Private Key文件，点击“Save private key”保存转换后的Key文件。
+
+![4.JPG](http://o8e06sulr.bkt.clouddn.com/4.JPG) 
  
- 
+![5.JPG](http://o8e06sulr.bkt.clouddn.com/5.JPG) 
 运行PUTTY.EXE，选择“Session”。在“Host Name”处填写系统IP，“Port”处填写“22”。
  
+![6.JPG](http://o8e06sulr.bkt.clouddn.com/6.JPG) 
+ 
 选择“Connection”->“SSH”->“Auth”，然后点击“Private key file for authentication”处的“Browse” 选择转换后的Private Key文件，然后点击“Open”打开登录界面。
+
+![7.JPG](http://o8e06sulr.bkt.clouddn.com/7.JPG) 
  
 在登录界面里输入系统账号，回车即可登录。
  
+![8.JPG](http://o8e06sulr.bkt.clouddn.com/8.JPG) 
+
 ###1.2.3  Linux或苹果系统登录
 
 如果是Linux或者苹果系统，首先需要给Private Key文件设置权限，命令如下：
@@ -122,6 +136,8 @@ Linux系统：`sudo vi /etc/ssh/ssh_config`
 ### 2.1  文件系统
 
 天河二号高性能计算平台文件系统被分为/HOME和/WORK两个区。
+
+![9.JPG](http://o8e06sulr.bkt.clouddn.com/9.JPG) 
  
 ### 2.1.1  /HOME分区
 
@@ -139,18 +155,24 @@ Linux系统：`sudo vi /etc/ssh/ssh_config`
 
 FileZilla的登录步骤见下图：
  
+![10.JPG](http://o8e06sulr.bkt.clouddn.com/10.JPG) 
  
+![11.JPG](http://o8e06sulr.bkt.clouddn.com/11.JPG) 
  
+![12.JPG](http://o8e06sulr.bkt.clouddn.com/12.JPG) 
  
- 
- 
- 
+![13.JPG](http://o8e06sulr.bkt.clouddn.com/13.JPG) 
+
+![14.JPG](http://o8e06sulr.bkt.clouddn.com/14.JPG) 
+
 注意：密钥所在路径不能含有中文。
 
 ###2.2.2  WinSCP登录
 
 WinSCP的登录步骤见下图：
- 
+
+![15.JPG](http://o8e06sulr.bkt.clouddn.com/15.JPG) 
+![16.JPG](http://o8e06sulr.bkt.clouddn.com/16.JPG) 
  
 注意：
 
@@ -172,13 +194,20 @@ module 通过配置modulefile支持环境变量的动态修改，能够控制软
 已经在登录服务结点上配置好module 工具，主要用法如下：
 
 module avail：查看可用的模块的列表。
+
+![17.JPG](http://o8e06sulr.bkt.clouddn.com/17.JPG) 
  
 module load [modulesfile]：能够加载需要使用的modulefiles。
  
 使用module 加载软件（OpenFOAM/2.2.2） 的配置环境。
- 
+
+![18.JPG](http://o8e06sulr.bkt.clouddn.com/18.JPG) 
+
+![19.JPG](http://o8e06sulr.bkt.clouddn.com/19.JPG) 
+
 module其它用法，可在help中查询。
- 
+
+![20.JPG](http://o8e06sulr.bkt.clouddn.com/20.JPG)  
  
 ## 4  编译器
 
@@ -235,12 +264,16 @@ module load intel-compilers/13.0.0
 ### 5.1  结点状态查看yhinfo或yhi
 
 yhi为yhinfo命令的简写，用户用其查看结点状态。 
+
+![21.JPG](http://o8e06sulr.bkt.clouddn.com/21.JPG)  
  
 其中PARTITION表示分区，NODES表示结点数，NODELIST为结点列表，STATE表示结点运行状态。其中，idle表示结点处于空闲状态，allocated表示结点已经分配了一个或多个作业。
 
 ### 5.2  作业状态信息查看yhqueue或yhq
 
 yhq为yhueue命令的简写，用户用其查看作业运行情况。
+
+![22.JPG](http://o8e06sulr.bkt.clouddn.com/22.JPG)  
  
 其中JOBID 表示任务ID，Name表示任务名称，USER为用户，TIME为已运行时间，NODES表示占用结点数，NODELIST为任务运行的结点列表。
 
@@ -287,13 +320,21 @@ yhrun包括多个选项，其中最常用的选项主要有以下几个：
 #### 5.3.3  使用示例
 
 1）在分区MIC 上指定任务数运行hostname：
- 
+
+![23.JPG](http://o8e06sulr.bkt.clouddn.com/23.JPG)  
+
 2）在分区MIC，结点cn[145-147]上运行hostname：
  
+![24.JPG](http://o8e06sulr.bkt.clouddn.com/24.JPG)  
+
 3）在MIC分区，运行4 任务的hostname，每个结点一个任务，分配的结点中至少包含结点cn[145-147]：
  
+![25.JPG](http://o8e06sulr.bkt.clouddn.com/25.JPG)  
+
 4）在MIC分区，运行4 任务的hostname，每个结点一个任务，分配的结点中不包含结点cn[145-147]：
- 
+
+![26.JPG](http://o8e06sulr.bkt.clouddn.com/26.JPG)  
+
 ### 5.4  批处理作业yhbatch
 #### 5.4.1  简介
 
@@ -304,6 +345,8 @@ yhrun包括多个选项，其中最常用的选项主要有以下几个：
 #### 5.4.2  使用示例
 例如用户的脚本名为mybash.sh，内容如下： 
  
+![27.JPG](http://o8e06sulr.bkt.clouddn.com/27.JPG)  
+
 根据该脚本用户提交批处理作业，需要明确申请的资源为MIC分区的4个结点。
  
 注意：需给该文本文件设置mybash.sh可执行权限，利用命令：chmod +x mybash.sh
@@ -326,11 +369,16 @@ yhrun包括多个选项，其中最常用的选项主要有以下几个：
 yhalloc提交方式如下：
 
 首先申请资源，执行如下命令： 
+
+`
+yhalloc -N 1 
+`
  
 通过yhq查看相应的jobID 为391753，结点为cn1483.
- 
+  
+![31.JPG](http://o8e06sulr.bkt.clouddn.com/31.JPG)  
 用户可以选择如下方式： 
- 
+ ![32.JPG](http://o8e06sulr.bkt.clouddn.com/32.JPG)  
 切换到cn1483结点，之后执行程序。
 
 ### 5.6  任务取消yhcancel
@@ -347,12 +395,16 @@ jobid可通过yhq获得。对于排队作业，取消作业将简单地把作业
 
 重要提示：
 
+
 1. 请不要在登录结点直接运行可执行程序（极大的影响其他用户的登录和使用效率）。
 2. 如无特殊需要，请使用批处理方式（yhbatch）提交任务，如果有任何问题请联系超算中心技术人员。
 3. 请保存好运行程序的log文件，从而方便超算中心技术人员在作业出问题后，协助解决问题。
 4. 若需登录计算结点运行程序，需要先分配计算结点，方可登录。
 5. 除了可看见work分区的用户，其他用户都需在提交命令中加入参数选项“-p 分区名”，即提交命令应为“yhurn -p 分区名 ...”或者“yhbatch -p 分区名”。同时，推荐用户使用yhbatch方式提交作业。分区名请通过yhi命令查看获得，其中PARTITION一栏对应的就是分区，如下图所示。
  
+
+![33.JPG](http://o8e06sulr.bkt.clouddn.com/33.JPG)  
+
  
 ## 6  常见上机问题（FAQ）
 
