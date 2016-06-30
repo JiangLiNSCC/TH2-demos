@@ -4,6 +4,11 @@
 ## Code
 在Code 板块中，演示一些使用操作（如 [Use VNC 使用虚拟桌面环境](https://github.com/JiangLiNSCC/TH2-demos/blob/master/Use%20VNC%20.ipynb) ）和一些说明，可能还会发布一些小的脚本工具。
 
+* [天河二号简明使用手册](https://github.com/JiangLiNSCC/TH2-demos/blob/master/Manual.MD)
+* [天河二号可视化环境](https://github.com/JiangLiNSCC/TH2-demos/blob/master/Visual.md)
+
+
+
 ## [Issues](https://github.com/JiangLiNSCC/TH2-demos/issues) 
 在Issues 板块中， 您可以提出一些通用性问题，这里绑定了我的企业邮箱。我会及时给您答复 ^ ^ 
 
