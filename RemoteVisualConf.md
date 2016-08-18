@@ -229,4 +229,33 @@ EndSection
   
   可以通过 nvidia-smi  来查看现在用到了显卡的进程有哪些。
   
+## 问题
 
+  1. 加载某些环境变量会影响 vgl 的工作。
+  
+  如下例：
+  
+  ```
+  source /WORK/app/osenv/ln1/set2.sh
+  glxgears
+  ```
+  这时候会出错：
+  ```
+  Error: couldn't get an RGB, Double-buffered visual
+  ```
+  这个错误的原因是因为LD_LIBRARY_PATH 里没有 /usr/lib64 ; 导致 libGL 和 libGLX 库调用的是原来的系统库，而不是NVIDIA 驱动安装的版本。
+  
+  解决办法：
+  ```
+  export LD_LIBRARY_PATH=/usr/lib64:$LD_LIBRARY_PATH
+  ```
+  
+## 通过测试的软件
+
+  * Abaqus (system) 
+  * ParaView (4.3.1-Linux-64bit)
+
+  
+  
+  
+  
