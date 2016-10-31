@@ -1,26 +1,3 @@
-# 声明
+see the private one :
 
-目前部署的proxy 只是用来进行简单的文件下载任务，对稳定性和性能不予保证。服务随时可能关闭，另外连接国外网络速度很慢且可能无法连接(并非代理的原因)。
-
-# 基本代理设置
-```
-export http_proxy=http://12.10.133.133:9999
-export ftp_proxy=ftp://12.10.133.133:9999
-export https_proxy=https://12.10.133.133:9999
-```
-
-这时候一般的 HTTP 资源和 FTP 资源都可以使用了 , 如 
-
-```
-wget http://www.baidu.com
-```
-
-
-
-## 启动PROXY [ for 管理员 ]
-
-
- cd ~WORKSPACE/project/proxy
- nohup ./proxy.py 9999  &> /dev/null 
- proxy.py 是一个非常简单的PYTHON 脚本，在 /WORK/app/share 下面有一个拷贝。
-
+https://github.com/lijiang2014/TH2-demos-prative/blob/master/Proxy.md
