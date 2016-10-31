@@ -22,4 +22,5 @@ wget http://www.baidu.com
 
  cd ~WORKSPACE/project/proxy
  nohup ./proxy.py 9999  &> /dev/null 
+ proxy.py 是一个非常简单的PYTHON 脚本，在 /WORK/app/share 下面有一个拷贝。
 
