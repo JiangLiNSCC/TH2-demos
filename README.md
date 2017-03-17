@@ -18,6 +18,6 @@
 
 
 **不过** 
-* 在提新问题之前最好新搜索一下已有问题（已经解决的问题是Closed 状态，要点一下才能看到），或许答案已经在这里了 。 在此repository 运营稳定后，会定期将 Issues 中的问题整理到 [WiKi](https://github.com/JiangLiNSCC/TH2-demos/wiki) 里。 但目前还是以Issues 为主。
+* 在提新问题之前最好先搜索一下已有问题（已经解决的问题是Closed 状态，要点一下才能看到），或许答案已经在这里了 。 在此repository 运营稳定后，会定期将 Issues 中的问题整理到 [WiKi](https://github.com/JiangLiNSCC/TH2-demos/wiki) 里。 ~但目前还是以Issues 为主。~
 * 无论我的回复有没有解决您的问题，都请给出回复，以方面我进行下一步的协助或Close 此问题
 * 欢迎用户间的相互探讨 !  也欢迎乐于分享的您开设关于使用TH2 的 repository . 
