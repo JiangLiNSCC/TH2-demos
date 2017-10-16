@@ -3,7 +3,7 @@
 ## [Wiki](https://github.com/JiangLiNSCC/TH2-demos/wiki)
 在线的，易于修改的天河二号的使用文档。
 
-**此resp将会被移除，有使用上的问题请直接联系[技术支持邮箱](techsupport@nscc-gz.cn)**
+**此resp将会被移除，有使用上的问题请直接联系[技术支持邮箱](email://techsupport@nscc-gz.cn)**
 
 为何需要一个在线的文档？天河的某些使用方式可能会有变化，您可以通过[订阅](https://github.com/JiangLiNSCC/TH2-demos#fork-destination-box)这个GitHub repo来了解新的动态。或者，您可以[发起](https://github.com/JiangLiNSCC/TH2-demos/issues/new)/跟踪某个具体的Issues（在Issues页码右下角的 Notifications 里设置）。
 
